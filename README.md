@@ -2,7 +2,7 @@
 
 Cornershop trabaja actualmente en 6 ciudades completando miles de órdenes por día. Un elemento fundamental para determinar cuántas órdenes podemos aceptar, cuando debemos comenzar a trabajar en una orden y que horario le podemos prometer a los clientes es la **estimación de tiempo**.
 
-En este caso te pedimos que entrenes el mejor estimador posible utilizando técnicas de Machine Learning y los datos disponible en la carpeta *data* (cada tabla en un archivo formato csv). Puedes utilizar el lenguaje y librería que más te acomode. *Nosotros trabajamos con Python, Scikit Learn y Keras, pero si prefieres trabajar en R u otra librería, no tenemos problemas*.
+En este caso te pedimos que entrenes el mejor estimador posible utilizando técnicas de Machine Learning y los datos disponibles en la carpeta *data* (cada tabla en un archivo formato csv). Puedes utilizar el lenguaje y librería que más te acomode. *Nosotros trabajamos con Python, Scikit Learn y Keras, pero si prefieres trabajar en R u otra librería, no tenemos problemas*.
 
 A continuación el detalle de la información que te facilitaremos:
 
