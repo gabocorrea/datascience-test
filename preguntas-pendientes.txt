@@ -1,0 +1,1 @@
+  - La columna promised_time tiene la hora estimada de llegada de la orden a la casa del cliente. Este valor no lo tienen si aun no tienen el valor de total_minutes (que es lo que tengo que estimar). Entonces me pregunto si la idea es que use los valores de promised_time. Mi plan es no utilizarlo para mi modelo final pero me gustaría saber que dices sobre esto.
