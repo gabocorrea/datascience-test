@@ -1,3 +1,9 @@
+# My ignores
+/src/out.txt
+
+
+
+
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
