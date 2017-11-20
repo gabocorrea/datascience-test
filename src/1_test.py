@@ -3,12 +3,13 @@ import numpy as np
 from os import path
 from datetime import datetime
 from collections import Counter
+from googlemapsutil import googlemapsutil
 
 time_start = datetime.now()
 
 
 #cuantas lineas de la tabla vamos a procesar. (None para usar toda la tabla)
-FIRST_N_ROWS = 16
+FIRST_N_ROWS = 20
 
 #archivos utilizados
 datapath = "../data/"
@@ -92,12 +93,67 @@ data_orders = data_orders.loc[:, data_orders.columns != 'store_branch_id']
 
 
 
+
+
+
+
+
+
+
+
+
+
+google_eta_table = pd.DataFrame([], columns=['order_id', 'google_eta'])
+ii = 0
+for index,row in data_orders.iterrows():
+    gmap = googlemapsutil('AIzaSyBhKgTnSKK_miAwAWc7UcStjl8-Yh6vy3s')
+    point_A = {
+        'lat' : row.loc['lat'],
+        'lng' : row.loc['lng']
+    }
+    point_B = {
+        'lat' : row.loc['lat_store'],
+        'lng' : row.loc['lng_store']
+    }
+    gmap_ans = gmap.get_distance_matrix( point_A , point_B )
+    google_eta = gmap.get_duration(gmap_ans)
+    d = {
+        'order_id'   : [row.loc['order_id']],
+        'google_eta' : [google_eta]
+    }
+    google_eta_table = google_eta_table.append( pd.DataFrame(d) )
+
+    ii+=1
+    if ii > FIRST_N_ROWS:
+        break
+
+data_orders = pd.merge(data_orders, google_eta_table, left_on='order_id', right_on='order_id')
+
+
+
+
+
+
+
+
+
+
+#delete unused columns
+data_orders = data_orders.loc[:, data_orders.columns != 'lat']
+data_orders = data_orders.loc[:, data_orders.columns != 'lng']
+data_orders = data_orders.loc[:, data_orders.columns != 'lat_store']
+data_orders = data_orders.loc[:, data_orders.columns != 'lng_store']
+
+
+
+
+
+data_orders = data_orders[['order_id','google_eta','num_products_KG','num_products_UN','picking_speed','seniority','dow','on_demand','total_minutes']]
+
 print(data_orders)
 
 
 
-
-#mi key google maps es AIzaSyBhKgTnSKK_miAwAWc7UcStjl8-Yh6vy3s
 
 
 
