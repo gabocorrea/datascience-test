@@ -8,13 +8,14 @@ from googlemapsutil import googlemapsutil
 time_start = datetime.now()
 
 
-#cuantas lineas de la tabla vamos a procesar. (None para usar toda la tabla)
-FIRST_N_ROWS = 20
+# cuantas lineas de la tabla vamos a procesar.
+# 7296 filas en orders.csv
+FIRST_N_ROWS = 7296
 
 #archivos utilizados
 datapath = "../data/"
 
-filepath_orders = path.join(datapath, 'orders - training.csv')
+filepath_orders = path.join(datapath, 'orders.csv')
 filepath_products = path.join(datapath, 'order_product.csv')
 filepath_shoppers = path.join(datapath, 'shoppers.csv')
 filepath_stores = path.join(datapath, 'storebranch.csv')
@@ -102,7 +103,7 @@ data_orders = data_orders.loc[:, data_orders.columns != 'store_branch_id']
 
 
 
-
+# Obtain google_eta from internet. Add it to table
 google_eta_table = pd.DataFrame([], columns=['order_id', 'google_eta'])
 ii = 0
 for index,row in data_orders.iterrows():
@@ -143,15 +144,32 @@ data_orders = data_orders.loc[:, data_orders.columns != 'lat']
 data_orders = data_orders.loc[:, data_orders.columns != 'lng']
 data_orders = data_orders.loc[:, data_orders.columns != 'lat_store']
 data_orders = data_orders.loc[:, data_orders.columns != 'lng_store']
+data_orders = data_orders.loc[:, data_orders.columns != 'seniority']
 
 
 
 
+# Reorder columns
+data_orders = data_orders[['order_id','google_eta','num_products_KG','num_products_UN','picking_speed','dow','on_demand','total_minutes']]
+#data_orders = data_orders[['order_id','num_products_KG','num_products_UN','picking_speed','dow','on_demand','total_minutes']]
 
-data_orders = data_orders[['order_id','google_eta','num_products_KG','num_products_UN','picking_speed','seniority','dow','on_demand','total_minutes']]
 
-print(data_orders)
 
+
+mask = pd.isna( data_orders['total_minutes'] )
+data_train = data_orders.loc[~mask]
+data_test = data_orders.loc[mask]
+
+print(data_train)
+print(len(data_train))
+print()
+print()
+print()
+print(data_test)
+print(len(data_test))
+
+data_train.to_csv("../data/pd_data_train.csv")
+data_test.to_csv("../data/pd_data_test.csv")
 
 
 

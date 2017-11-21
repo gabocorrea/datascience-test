@@ -37,7 +37,9 @@ class googlemapsutil():
     # Returns seconds (int) of a google distance estimation.
     # The parameter dictionary should be what get_distance_matrix returns.
     def get_duration(self, dictionary):
-        return dictionary['rows'][0]['elements'][0]['duration']['value']
+        if 'rows' in dictionary:
+            if len(dictionary['rows']) > 0:
+                return dictionary['rows'][0]['elements'][0]['duration']['value']
 
 
 
