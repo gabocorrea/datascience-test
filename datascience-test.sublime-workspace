@@ -1,0 +1,1032 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"goog",
+				"google_eta_table〔variable〕"
+			],
+			[
+				"goo",
+				"google_eta"
+			],
+			[
+				"gmap",
+				"gmap_ans〔variable〕"
+			],
+			[
+				"poi",
+				"point_B〔variable〕"
+			],
+			[
+				"ori",
+				"origin〔variable〕"
+			],
+			[
+				"func",
+				"Funcion1_aux"
+			],
+			[
+				"Fun",
+				"Funcion1_aux"
+			],
+			[
+				"uni",
+				"unittest〔module〕"
+			],
+			[
+				"ans",
+				"answer_type〔argument〕"
+			],
+			[
+				"url",
+				"urllib3"
+			],
+			[
+				"api",
+				"api_key"
+			],
+			[
+				"poin",
+				"point_B〔argument〕"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"store",
+				"store_branch_id"
+			],
+			[
+				"lng",
+				"lng_store"
+			],
+			[
+				"shopper",
+				"shopper_id"
+			],
+			[
+				"filepa",
+				"filepath_stores〔variable〕"
+			],
+			[
+				"data",
+				"data_shoppers〔variable〕"
+			],
+			[
+				"filepath",
+				"filepath_shoppers〔variable〕"
+			],
+			[
+				"temp",
+				"temp_table〔variable〕"
+			],
+			[
+				"numpro",
+				"num_products_table〔variable〕"
+			],
+			[
+				"num",
+				"num_products_KG"
+			],
+			[
+				"num_pro",
+				"num_products_table"
+			],
+			[
+				"nump",
+				"num_products_table〔variable〕"
+			],
+			[
+				"order",
+				"order_id"
+			],
+			[
+				"query",
+				"query_result〔variable〕"
+			],
+			[
+				"orde",
+				"order_id"
+			],
+			[
+				"row",
+				"row_orders"
+			],
+			[
+				"filepro",
+				"filepath_products"
+			],
+			[
+				"file",
+				"filepath_stores\tstatement"
+			],
+			[
+				"svm",
+				"svm_classifier\tstatement"
+			],
+			[
+				"load_di",
+				"load_digits\tfunction"
+			],
+			[
+				"false",
+				"False\tkeyword"
+			],
+			[
+				"read",
+				"read_csv\tfunction"
+			],
+			[
+				"stock",
+				"StockList\tclass"
+			],
+			[
+				"for",
+				"format_suffix_patterns\tfunction"
+			],
+			[
+				"Stock",
+				"StockSerializer\tclass"
+			],
+			[
+				"S",
+				"StockSerializer\tclass"
+			],
+			[
+				"view",
+				"views\tmodule"
+			],
+			[
+				"res",
+				"rest_framework\tmodule"
+			],
+			[
+				"floa",
+				"FloatField\tclass"
+			],
+			[
+				"albumup",
+				"AlbumUpdate\tclass"
+			],
+			[
+				"reverse",
+				"reverse_lazy\tfunction"
+			],
+			[
+				"conte",
+				"context_object_name\tstatement"
+			],
+			[
+				"Album",
+				"AlbumCreate\tclass"
+			],
+			[
+				"detail",
+				"detailview\tDetailView"
+			],
+			[
+				"all",
+				"all_albums"
+			],
+			[
+				"template",
+				"template_name\tstatement"
+			],
+			[
+				"lis",
+				"ListView\tclass"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"gly-cd",
+				"glyphicon-collapse-down \tBootstrap 3 Class"
+			],
+			[
+				"navba",
+				"navbar-form \tBootstrap 3 Class"
+			],
+			[
+				"navbar",
+				"navbar-brand \tBootstrap 3 Class"
+			],
+			[
+				"wid",
+				"width\tAttr"
+			],
+			[
+				"selec",
+				"selected_song\tstatement"
+			],
+			[
+				"ALBU",
+				"album"
+			],
+			[
+				"albu",
+				"album_id\tparam"
+			],
+			[
+				"get",
+				"get_object_or_404\tfunction"
+			],
+			[
+				"htt",
+				"Http404"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/1_test.py",
+			"settings":
+			{
+				"buffer_size": 4726,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/googlemapsutil.py",
+			"settings":
+			{
+				"buffer_size": 2233,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/out.txt",
+			"settings":
+			{
+				"buffer_size": 3003,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/pd_data_train.csv",
+			"settings":
+			{
+				"buffer_size": 1472,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/orders.csv",
+			"settings":
+			{
+				"buffer_size": 1497425,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 269.0,
+		"last_filter": "painsta",
+		"selected_items":
+		[
+			[
+				"painsta",
+				"Package Control: Install Package"
+			],
+			[
+				"packdisa",
+				"Package Control: Disable Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pacdesa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pacdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packaonre",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: View"
+			],
+			[
+				"pacinsta",
+				"Package Control: Install Package"
+			],
+			[
+				"apcka",
+				"Package Control: List Packages"
+			],
+			[
+				"packacontr",
+				"Package Control: Remove Package"
+			],
+			[
+				"packinsta\t",
+				"Package Control: Install Package"
+			],
+			[
+				"packacon",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal\t",
+				"Package Control: Install Package"
+			],
+			[
+				"new",
+				"Django: New App"
+			],
+			[
+				"django",
+				"Django: New App"
+			],
+			[
+				"djannew",
+				"Django: New Project"
+			],
+			[
+				"packalis",
+				"Package Control: List Packages"
+			],
+			[
+				"sniht",
+				"Snippet: html"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pckainsta\t",
+				"Package Control: Install Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pacenabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"packacins",
+				"Package Control: Install Package"
+			],
+			[
+				"packcon",
+				"Package Control: Enable Package"
+			],
+			[
+				"PACKAINGN",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"packageconre",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install\t",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pep",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"packlis\t",
+				"Package Control: List Packages"
+			],
+			[
+				"packains\t",
+				"Package Control: Install Package"
+			],
+			[
+				"packalis\t",
+				"Package Control: List Packages"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"insta\t",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 148.0,
+		"history":
+		[
+			"a",
+			"a = 1",
+			"a",
+			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 52313))"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/gabo/Documents/dev/data science/datascience-test",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src"
+	],
+	"file_history":
+	[
+		"/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/1_sklearn.py",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/.gitignore",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/pd_data_test.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/pd_data_train.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/pd_data_test.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/storebranch.csv",
+		"/C/Users/gabo/Documents/dev/data science/pandas-tutorial/orders - training.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/__pycache__/googlemapsutil.cpython-36.pyc",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/googlemapsutil.py",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/googlemapsutil_test.py",
+		"/C/Users/gabo/Downloads/getonbrd.txt",
+		"/C/Users/gabo/Downloads/ej3.c",
+		"/C/Users/gabo/Downloads/ej2.c",
+		"/C/Users/gabo/Downloads/ej1.c",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/googlemapsutil_test",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/shoppers.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/order_product.csv",
+		"/C/Users/gabo/Documents/dev/data science/pandas-tutorial/hubble_data_no_headers.csv",
+		"/C/Users/gabo/Documents/dev/data science/pandas-tutorial/1.py",
+		"/C/Users/gabo/Documents/U - UNAB/Fundamentos de Programacion/Fundamentos 2016/Clases/clase16/out.txt",
+		"/C/Users/gabo/Documents/U - UNAB/Fundamentos de Programacion/Fundamentos 2016/Clases/clase 17/17.0.c",
+		"/C/Users/gabo/Documents/U - UNAB/Fundamentos de Programacion/Fundamentos 2016/Clases/clase15/15.0.c",
+		"/C/Users/gabo/Documents/U - UNAB/Fundamentos de Programacion/Fundamentos 2016/Clases/clase16/16.1.c",
+		"/C/Users/gabo/Documents/U - UNAB/Fundamentos de Programacion/Fundamentos 2016/Clases/clase16/16.0.c",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/1_test.py",
+		"/C/Users/gabo/AppData/Roaming/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
+		"/C/Users/gabo/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/gabo/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/C/Users/gabo/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/C/Users/gabo/Downloads/libreria.h",
+		"/C/Users/gabo/Downloads/EjemploDeUso.c",
+		"/C/Users/gabo/Downloads/main.py",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders_training_filtered.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders - training.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders_training.csv.arff",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders - test.csv",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/preguntas-pendientes.txt",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/companies/views.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/companies/models.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Resumen de Tutoriales de Django.md",
+		"/C/Users/gabo/Downloads/req.txt",
+		"/C/Users/gabo/Downloads/storebranch.txt",
+		"/C/Users/gabo/Downloads/storebranch - Copy.csv",
+		"/C/Users/gabo/Downloads/shoppers.txt",
+		"/C/Users/gabo/Downloads/order_product.txt",
+		"/C/Users/gabo/Downloads/orders.txt",
+		"/C/Users/gabo/Downloads/orders.csv",
+		"/C/Users/gabo/Downloads/storebranch.csv",
+		"/C/Users/gabo/Downloads/shoppers.csv",
+		"/C/Users/gabo/Downloads/order_product.csv",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/companies/serializers.py",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/GroundCheck.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/Charger.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/Camera2DZoomOutWhenJumping.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/TimeController.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/SmoothFollow.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/PlayerAnimations.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/Unique.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/GameController.cs",
+		"/C/Users/Public/Documents/Unity Projects/MyUnityGames/I Can Jump!/Assets/Code/HeartsHPUI.cs",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/website/urls.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/companies/admin.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/website/settings.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 002 REST/website/website/__init__.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/templates/music/index.html",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/urls.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/views.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/templates/music/album_form.html",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/templates/music/form-template.html",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/static/music/style.css",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/models.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/templates/music/detail.html",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/templates/music/base.html",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/apps.py",
+		"/C/Users/gabo/Downloads/bg.jpg",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/admin.py",
+		"/C/Users/gabo/Documents/Django Projects/Tutorials/Tutorial 001/website/music/tests.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"FIRST_N_ROWS",
+			"get_duration_in_traffic",
+			"_send_request",
+			",",
+			"point_B",
+			"point_A",
+			"25b1e6be606fe62b5770a5bfaf25bfec",
+			"ba0018f165d20dcee11463e10a6da3ed",
+			"452ae015bf846e1d2932b7ea15720d64",
+			"9d65282d498c0338377867996e761399",
+			"452ae015bf846e1d2932b7ea15720d64",
+			"044d56734d20e04984d846dade6d39f3",
+			"head",
+			"6abd5e28d01b7c733fe37485294235dc",
+			"bdfc44fb525986b7bab8c589fc47e853",
+			"6abd5e28d01b7c733fe37485294235dc",
+			"bdfc44fb525986b7bab8c589fc47e853",
+			"6abd5e28d01b7c733fe37485294235dc\t",
+			"filepaths_list",
+			"\n",
+			",\n",
+			",",
+			",\n",
+			",",
+			"(",
+			"(1)",
+			"(",
+			"favori",
+			"active",
+			"template_name",
+			"topNavBar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/1_test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/googlemapsutil.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1592
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 606.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/out.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1273,
+								1273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/pd_data_train.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "data/orders.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1497425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1497133,
+								1497133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 291740.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 606.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "datascience-test.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ou",
+				"src\\out.txt"
+			],
+			[
+				"te",
+				"src\\1_test.py"
+			],
+			[
+				"pd",
+				"data\\pd_data_train.csv"
+			],
+			[
+				"tes",
+				"src\\1_test.py"
+			],
+			[
+				"googl",
+				"src\\googlemapsutil.py"
+			],
+			[
+				"out",
+				"src\\out.txt"
+			],
+			[
+				"order",
+				"data\\orders.csv"
+			],
+			[
+				"test",
+				"src\\1_test.py"
+			],
+			[
+				"goo",
+				"src\\googlemapsutil.py"
+			],
+			[
+				"1",
+				"C:\\Users\\gabo\\Documents\\dev\\data science\\sklearn-tutorial\\1_sklearn.py"
+			],
+			[
+				"store",
+				"data\\storebranch.csv"
+			],
+			[
+				"orde",
+				"data\\orders.csv"
+			],
+			[
+				"shopp",
+				"data\\shoppers.csv"
+			],
+			[
+				"16",
+				"C:\\Users\\gabo\\Documents\\U - UNAB\\Fundamentos de Programacion\\Fundamentos 2016\\Clases\\clase16\\16.0.c"
+			],
+			[
+				"or",
+				"C:\\Users\\gabo\\Documents\\dev\\data science\\pandas-tutorial\\orders - training.csv"
+			],
+			[
+				"model",
+				"companies\\models.py"
+			],
+			[
+				"url",
+				"website\\urls.py"
+			],
+			[
+				"admin",
+				"companies\\admin.py"
+			],
+			[
+				"vie",
+				"music\\views.py"
+			],
+			[
+				"mode",
+				"music\\models.py"
+			],
+			[
+				"vi",
+				"music\\views.py"
+			],
+			[
+				"inde",
+				"music\\templates\\music\\index.html"
+			],
+			[
+				"app",
+				"music\\apps.py"
+			],
+			[
+				"deta",
+				"music\\templates\\music\\detail.html"
+			],
+			[
+				"st",
+				"music\\static\\music\\style.css"
+			],
+			[
+				"view",
+				"music\\views.py"
+			],
+			[
+				"html",
+				"music\\templates\\music\\detail.html"
+			],
+			[
+				"style",
+				"music\\static\\music\\style.css"
+			],
+			[
+				"de",
+				"music\\templates\\music\\detail.html"
+			],
+			[
+				"ur",
+				"music\\urls.py"
+			],
+			[
+				"models",
+				"music\\models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\gabo\\Documents\\Django Projects\\Tutorials\\Tutorial 001\\website\\tutorial_001_djangobasics.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
