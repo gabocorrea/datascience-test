@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"x",
+				"xlabel〔function〕"
+			],
+			[
+				"X",
+				"X_test"
+			],
+			[
+				"tota",
+				"total_minutes_predicted"
+			],
+			[
+				"multi",
+				"multiprocessing〔directory〕"
+			],
+			[
+				"setti",
+				"settings_scale〔variable〕"
+			],
+			[
+				"Linea",
+				"LinearRegression〔module〕"
+			],
+			[
+				"Lin",
+				"LinearSVR"
+			],
+			[
+				"y_",
+				"y_pred"
+			],
+			[
+				"df",
+				"df_pred〔variable〕"
+			],
+			[
+				"y_tr",
+				"y_true"
+			],
+			[
+				"clas",
+				"classification_report"
+			],
+			[
 				"file",
 				"filename_out〔variable〕"
 			],
@@ -14,10 +58,6 @@
 			[
 				"croo",
 				"cross_val_score〔module〕"
-			],
-			[
-				"X",
-				"X_test"
 			],
 			[
 				"settin",
@@ -288,7 +328,7 @@
 			"file": "src/create_classifier.py",
 			"settings":
 			{
-				"buffer_size": 2469,
+				"buffer_size": 3807,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -297,7 +337,7 @@
 			"file": "src/log.txt",
 			"settings":
 			{
-				"buffer_size": 2836,
+				"buffer_size": 394256,
 				"line_ending": "Windows"
 			}
 		},
@@ -329,6 +369,14 @@
 			}
 		},
 		{
+			"file": "data/storebranch.csv",
+			"settings":
+			{
+				"buffer_size": 11818,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "data/pd_data_test.csv",
 			"settings":
 			{
@@ -342,26 +390,6 @@
 			"settings":
 			{
 				"buffer_size": 1497425,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/1_sklearn.py",
-			"settings":
-			{
-				"buffer_size": 368,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "import pandas as pd\nimport quandl, math, datetime\nimport numpy as np\nfrom sklearn import preprocessing, cross_validation, svm\nfrom sklearn.linear_model import LinearRegression\nimport matplotlib.pyplot as plt\nfrom matplotlib import style\nimport pickle\n\nstyle.use('ggplot')\n\n\ndf = quandl.get('WIKI/GOOGL')\n\ndf = df[['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume']]\n\ndf['HL_PCT'] = (df['Adj. High'] - df['Adj. Close']) / df['Adj. Close'] * 100.0\n\ndf['PCT_change'] = (df['Adj. Close'] - df['Adj. Open']) / df['Adj. Open'] * 100.0\n\ndf = df[['Adj. Close','HL_PCT','PCT_change','Adj. Volume']]\n\n\nforecast_col = 'Adj. Close'\n\ndf.fillna(-99999, inplace=True)\n\nforecast_out = int(math.ceil(0.01*len(df)))\n\ndf['label'] = df[forecast_col].shift(-forecast_out)\n\n\n\n\n\n\n\n\n\n# features\nX = np.array(df.drop(['label'],1))\nX = preprocessing.scale(X)\nX_lately = X[-forecast_out:]\nX = X[:-forecast_out]\n\n\ndf.dropna(inplace=True)\n\n# labels\ny = np.array(df['label'])\n\n\n\nX_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=0.2)\n\n#clf = svm.SVR()\n#clf.fit(X_train, y_train)\n#with open('linearregression.picke','wb') as f:\n#    pickle.dump(clf, f)\n\nclf = None\nwith open('linearregression.picke','rb') as f:\n    clf = pickle.load(f)\n\naccuracy = clf.score(X_test, y_test)\n\n\n\nforecast_set = clf.predict(X_lately)\n\nprint(forecast_set, accuracy, forecast_out)\n\n\ndf['Forecast'] = np.nan\n\nlast_date = df.iloc[-1].name\nlast_unix = last_date.timestamp()\none_day = 86400\nnext_unix = last_unix + one_day\n\n\n\nfor i in forecast_set:\n    next_date = datetime.datetime.fromtimestamp(next_unix)\n    next_unix += one_day\n    df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)] + [i]\n\ndf['Adj. Close'].plot()\ndf['Forecast'].plot()\nplt.legend(loc=4)\nplt.xlabel('Date')\nplt.ylabel('Price')\nplt.show()\n\n\n\n\n\n\n\n\n\n",
-			"file": "/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/2_YT_sentdex.py",
-			"file_size": 1923,
-			"file_write_time": 131558638606813981,
-			"settings":
-			{
-				"buffer_size": 1821,
 				"line_ending": "Windows"
 			}
 		}
@@ -601,9 +629,12 @@
 	],
 	"file_history":
 	[
+		"/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/2_YT_sentdex.py",
+		"/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/1_sklearn.py",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/log.txt",
+		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/shoppers.csv",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/.gitignore",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/classifiers/LinearRegression003.pickle",
-		"/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/1_sklearn.py",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/pd_data_test.csv",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/pd_data_train.csv",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/pd_data_test.csv",
@@ -618,7 +649,6 @@
 		"/C/Users/gabo/Downloads/ej1.c",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/src/googlemapsutil_test",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/orders.csv",
-		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/shoppers.csv",
 		"/C/Users/gabo/Documents/dev/data science/datascience-test/data/order_product.csv",
 		"/C/Users/gabo/Documents/dev/data science/pandas-tutorial/hubble_data_no_headers.csv",
 		"/C/Users/gabo/Documents/dev/data science/pandas-tutorial/1.py",
@@ -683,7 +713,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -697,6 +727,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"settings_plot",
+			"mean_squared_error",
+			"b59e4299d17841d3f805866677d952e9",
+			",52\\d\\d",
+			" ",
 			"model_filename",
 			"target",
 			"FIRST_N_ROWS",
@@ -734,7 +769,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			""
@@ -748,7 +783,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -764,8 +799,8 @@
 						"selection":
 						[
 							[
-								3072,
-								3072
+								121,
+								121
 							]
 						],
 						"settings":
@@ -779,7 +814,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -788,15 +823,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2469,
+						"buffer_size": 3807,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								399,
-								399
+								1597,
+								1597
 							]
 						],
 						"settings":
@@ -806,10 +841,10 @@
 							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1482.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -818,26 +853,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2836,
+						"buffer_size": 394256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
+								393950,
+								393950
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3060.0,
+						"translation.y": 197181.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -893,7 +930,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1210.0,
+						"translation.y": 470.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 8,
@@ -912,8 +949,8 @@
 						"selection":
 						[
 							[
-								149,
-								149
+								44188,
+								44220
 							]
 						],
 						"settings":
@@ -921,7 +958,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 12075.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -929,6 +966,34 @@
 				},
 				{
 					"buffer": 6,
+					"file": "data/storebranch.csv",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 11818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11574,
+								11610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4115.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "data/pd_data_test.csv",
 					"semi_transient": false,
 					"settings":
@@ -952,11 +1017,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "data/orders.csv",
 					"semi_transient": false,
 					"settings":
@@ -968,8 +1033,8 @@
 						"selection":
 						[
 							[
-								1497133,
-								1497133
+								13290,
+								13322
 							]
 						],
 						"settings":
@@ -977,68 +1042,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4540.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/1_sklearn.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 368,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								66,
-								66
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3515.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/Users/gabo/Documents/dev/data science/sklearn-tutorial/2_YT_sentdex.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1821,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1252,
-								1252
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/MagicPython/grammars/MagicPython.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 900.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1097,12 +1104,28 @@
 		"selected_items":
 		[
 			[
-				"2",
-				"C:\\Users\\gabo\\Documents\\dev\\data science\\sklearn-tutorial\\2_YT_sentdex.py"
+				"log",
+				"src\\log.txt"
+			],
+			[
+				"1",
+				"src\\1_test.py"
+			],
+			[
+				"lo",
+				"src\\log.txt"
+			],
+			[
+				"shop",
+				"data\\shoppers.csv"
 			],
 			[
 				"pd",
 				"data\\pd_data_train.csv"
+			],
+			[
+				"2",
+				"C:\\Users\\gabo\\Documents\\dev\\data science\\sklearn-tutorial\\2_YT_sentdex.py"
 			],
 			[
 				"ou",
@@ -1135,10 +1158,6 @@
 			[
 				"goo",
 				"src\\googlemapsutil.py"
-			],
-			[
-				"1",
-				"C:\\Users\\gabo\\Documents\\dev\\data science\\sklearn-tutorial\\1_sklearn.py"
 			],
 			[
 				"store",
