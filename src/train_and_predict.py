@@ -6,7 +6,6 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import  mean_squared_error, r2_score
 import pickle, os, math
-from multiprocessing import Process
 import matplotlib.pyplot as plt
 from tabulate import tabulate
 

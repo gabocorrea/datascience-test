@@ -117,7 +117,7 @@ for index,row in data_orders.iterrows():
         'lng' : row.loc['lng_store']
     }
     gmap_ans = gmap.get_distance_matrix( point_A , point_B )
-    google_eta = gmap.get_duration(gmap_ans)
+    google_eta = gmap.get_duration(gmap_ans, data_to_request='duration')
     d = {
         'order_id'   : [row.loc['order_id']],
         'google_eta' : [google_eta]
@@ -151,7 +151,6 @@ data_orders = data_orders.loc[:, data_orders.columns != 'seniority']
 
 # Reorder columns
 data_orders = data_orders[['order_id','google_eta','num_products_KG','num_products_UN','picking_speed','dow','on_demand','total_minutes']]
-#data_orders = data_orders[['order_id','num_products_KG','num_products_UN','picking_speed','dow','on_demand','total_minutes']]
 
 
 
@@ -169,7 +168,7 @@ print(data_test)
 print(len(data_test))
 
 data_train.to_csv("../data/pd_data_train.csv")
-data_test.to_csv("../data/pd_data_test.csv")
+data_test.to_csv("../data/pd_data_unknown.csv")
 
 
 
