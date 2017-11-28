@@ -2,6 +2,9 @@
 /src/out.txt
 /src/classifiers
 
+*.sublime-workspace
+*.sublime-project
+
 
 
 # Windows thumbnail cache files
